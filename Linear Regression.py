@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
+
 data = pd.read_csv("data.csv")
 data2 = pd.read_csv("data2.csv")
 # print(data)
@@ -43,6 +45,7 @@ for i in range(epochs):
     
     if epochs % 50 == 0:
         print(f'Epochs = {i}')
+
 
 print(m, b)
 plt.scatter(data2.X, data2.Y, color='black')
