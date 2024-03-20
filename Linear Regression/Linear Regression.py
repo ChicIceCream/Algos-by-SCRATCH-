@@ -5,8 +5,8 @@ from sklearn.linear_model import LinearRegression
 
 
 
-data = pd.read_csv("data.csv")
-data2 = pd.read_csv("data2.csv")
+# data = pd.read_csv("data.csv")
+data2 = pd.read_csv("Linear Regression\data2.csv")
 # print(data)
 
 # plt.scatter(data2.X, data2.Y)
@@ -24,9 +24,7 @@ def gradient_descent(m_now, c_now, points, L):
     m_gradient = points.iloc[len(points)//2].X
     c_gradient = points.iloc[len(points)//2].Y
     
-    n = len(points)
-    
-    for i in range(n):
+    for i in range(len(points)):
         x = points.iloc[i].X
         y = points.iloc[i].Y
         
