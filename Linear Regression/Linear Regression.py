@@ -24,7 +24,9 @@ def gradient_descent(m_now, c_now, points, L):
     m_gradient = points.iloc[len(points)//2].X
     c_gradient = points.iloc[len(points)//2].Y
     
-    for i in range(len(points)):
+    n = len(points)
+    
+    for i in range(n):
         x = points.iloc[i].X
         y = points.iloc[i].Y
         
